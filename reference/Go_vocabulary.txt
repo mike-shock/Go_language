@@ -1,0 +1,36 @@
+
+Keywords: // may be used only where the syntax permits; they can’t be used as names
+ break		default		func	interface	select 
+ case		defer		go	map		struct
+ chan		else		goto	package		switch
+ const		fallthrough	if	range		type
+ continue	for		import	return		var
+
+Predeclared names: // for built-in constants, types, and functions
+
+Constants:
+ true false iota nil
+
+Types:
+ bool byte
+ complex128 complex64 
+ error
+ float32 float64
+ int int8 int16 int32 int64 
+ rune
+ string
+ uint uint8 uint16 uint32 uint64 uintptr 
+
+Functions:
+ append
+ cap close complex copy
+ delete imag
+ len make new 
+ real recover panic
+
+Stylistically, Go programmers use ‘‘camel case’’ when forming names by combining words; 
+that is, interior capital letters are preferred over interior underscores. 
+Thus the standard libraries have functions with names like QuoteRuneToASCII and parseRequestLine 
+but never quote_rune_to_ASCII or parse_request_line. 
+The letters of acronyms and initialisms like ASCII and HTML are always rendered in the same case, 
+so a function might be called html- Escape, HTMLEscape, or escapeHTML, but not escapeHtml.
