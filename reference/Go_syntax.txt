@@ -1,5 +1,5 @@
 
-_ // the variable to throw away value 
+_  // blank identifier ~ the variable to throw away value 
 <- // operation of sending to a channel (ch<-) or reading from (<-ch) a channel 
 := // type inference: short assignment and declaration of a variable 
 %T // for printing the type 
@@ -14,37 +14,36 @@ ch <- v // send a value to the channel
 const Big float64 = 1 << 100 // binary 1 with 100 zeros 
 T(v) // expression for converting a value to the type 
 
-break // if, for or switch
-case // of a switch 
-chan // channel declaration 
-chan<- // input channel type 
-const C // constant declaration 
-continue // to the next loop iteration
+break    // if, for or switch 
+case     // of a switch 
+chan ch  // channel declaration 
+ch<-     // input channel type 
+const C = expression // constant declaration 
+continue // to the next loop iteration 
 default //
 defer // command execution 
-else // otherwise for if
-for // cycle
+else // otherwise for if 
+for // cycle 
 if // branch 
 import "..." // import a package
 import ( "..." ) // factored import statement 
-interface //
+interface i {} //
 fallthrough // to the next case in switch 
-func name { ... } // function declaration
+func f() { ... } // function declaration
 func main() { ... } // programme starting function 
-go "goroutime name" // start concurrent routine 
+go goroutime_name // start concurrent routine 
 goto label // 
 map //
 package main // package declaration 
 range //
 return //
 select //
-struct S // structure declaration 
+struct S { ... } // structure declaration 
 struct { ... } // struct literal 
 switch // 
-type // type declaration
-var //  variables declaration
+type T // type declaration 
+var name type = expression //  variables declaration 
 
-
-ioutil.Discard // writing to this output stream discards the data
-os.Stdout // standard output stream
+ioutil.Discard // writing to this output stream discards the data 
+os.Stdout // standard output stream 
 

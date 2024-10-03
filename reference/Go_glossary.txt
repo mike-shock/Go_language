@@ -25,10 +25,11 @@ package main ~
 package-level declaration ~ 
 predeclared names ~ like int and true for built-in constants, types and functions 
 standard packages ~ golang.org/pkg
-statement ~ every statement begins with a keyword
+statement ~ every statement begins with a keyword 
 struct ~ a group of values called fields, often of different types, that are collected together in a single object that can be treated as a unit
-struct literal ~
-tagless switch ~
+struct literal ~ 
+tagless switch ~ 
+tuple assignment ~ i, j = j, i 
 TinyGo.org ~
-zero value ~ of an uninitialized variable is implicit initial value: 0 for numbers, false for booleans, "" for strings
+zero value ~ of an uninitialized variable is implicit initial value: 0 for numbers, false for booleans, "" for strings, nil for interfaces and reference types 
 

@@ -6,7 +6,17 @@ Keywords: // may be used only where the syntax permits; they can’t be used as 
  const		fallthrough	if	range		type
  continue	for		import	return		var
 
-Predeclared names: // for built-in constants, types, and functions
+Predeclared names: // for built-in constants, types, functions
+
+Declarations
+ 4 major kinds of declarations:
+ - var, const, type, func
+ additional declarations:
+ + package declaration
+ + import declarations
+ Scopes:
+  package-level declarations
+  local declarations
 
 Constants:
  true false iota nil
@@ -20,6 +30,7 @@ Types:
  rune
  string
  uint uint8 uint16 uint32 uint64 uintptr 
+reference types: slice, pointer, map, channel, function
 
 Functions:
  append
@@ -34,3 +45,4 @@ Thus the standard libraries have functions with names like QuoteRuneToASCII and 
 but never quote_rune_to_ASCII or parse_request_line. 
 The letters of acronyms and initialisms like ASCII and HTML are always rendered in the same case, 
 so a function might be called html- Escape, HTMLEscape, or escapeHTML, but not escapeHtml.
+
