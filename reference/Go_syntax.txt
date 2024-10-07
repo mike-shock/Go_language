@@ -25,19 +25,31 @@ continue // to the next loop iteration
 default //
 defer // command execution 
 else // otherwise for if 
+<<<<<<< HEAD
 for // cycle 
 if // branch 
 import "..." // import a package
 import ( "..." ) // factored import statement 
 init () // functions to be automatically executed when package is imported 
 interface i {} //
+=======
+>>>>>>> a4aadbdb8e4b9d43940e9a7fefda6c2500509a92
 fallthrough // to the next case in switch 
+for // cycle 
 func f() { ... } // function declaration
 func main() { ... } // programme starting function 
 go goroutime_name // start concurrent routine 
 goto label // 
+<<<<<<< HEAD
 make(T) // allocate memory for a value of type T 
 map[KeyType]ValueType // map declaration 
+=======
+if // branch 
+import "..." // import a package
+import ( "..." ) // factored import statement 
+interface i {} //
+map //
+>>>>>>> a4aadbdb8e4b9d43940e9a7fefda6c2500509a92
 package main // package declaration 
 range // 
 return // 
