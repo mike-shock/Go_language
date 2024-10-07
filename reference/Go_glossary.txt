@@ -1,8 +1,8 @@
 
 blank identifier = _ 
-Capitalized exported names ~ of variables and functions
-CSP = communicating sequential processes
-channel ~ communication mechanism that allows one goroutine to pass values of a specified type to another goroutine
+Capitalized exported names ~ of variables and functions 
+CSP = communicating sequential processes 
+channel ~ communication mechanism that allows one goroutine to pass values of a specified type to another goroutine 
 composite literal ~ a compact notation for instantiating any of Go’s composite types from a sequence of element values: []color.Color{...} or gif.GIF{...}
 contributed packages ~ godoc.org/
 factored import statement ~ ( "..." )
@@ -11,9 +11,9 @@ gccgo ~
 Go ~ programming language 
 Golang = Go 
 gollvm ~ 
-GopherJS ~ 
-gopl ~ "The Go Programming Language" book by A.A.A.Donovan & B.W.Kernighan (gopl.io)
-goroutine ~ concurrently executable function
+GopherJS ~ cross-compiler from Go to JavaScript 
+gopl ~ "The Go Programming Language" book by A.A.A.Donovan & B.W.Kernighan (gopl.io) 
+goroutine ~ concurrently executable function 
 Robert Griesemer ~ 
 Rob Pike ~ 
 Ken Thompson ~ 
