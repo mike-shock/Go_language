@@ -20,7 +20,9 @@ break    // if, for or switch
 case     // of a switch 
 chan ch  // channel declaration 
 ch<-     // input channel type 
-const C = expression // constant declaration 
+const C = expression       // constant declaration 
+const C1, C2 = v1, v2      // constant declaration 
+const ( C1 = v1, C2 = v2 ) // constant declaration 
 continue // to the next loop iteration 
 default //
 defer // command execution 
