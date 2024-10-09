@@ -1,11 +1,9 @@
 Go is a tool for managing Go source code.
 
 Usage:
-
 	go <command> [arguments]
 
 The commands are:
-
 	bug         start a bug report
 	build       compile packages and dependencies
 	clean       remove object files and cached files
