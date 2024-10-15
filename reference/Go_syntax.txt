@@ -1,4 +1,4 @@
-
+;  // a semicolon may be omitted before a closing ")" or "}"
 _  // blank identifier ~ the variable to throw away value 
 <- // operation of sending to a channel (ch<-) or reading from (<-ch) a channel 
 := // type inference: short assignment and declaration of a variable 
@@ -12,56 +12,42 @@ v, closed := <- ch // receive a value from the channel and check if it's closed
 ch <- v // send a value to the channel 
 []T // slice
 [size]T // array
-
-const Big float64 = 1 << 100 // binary 1 with 100 zeros 
 T(v) // expression for converting a value to the type 
 
-break    // if, for or switch 
-case     // of a switch 
-chan ch  // channel declaration 
+break    // reserved keyword: if, for, switch 
+case     // reserved keyword: switch 
+chan ch  // reserved keyword: channel declaration 
 ch<-     // input channel type 
-const C = expression       // constant declaration 
+const C = expression       // reserved keyword: constant declaration 
 const C1, C2 = v1, v2      // constant declaration 
 const ( C1 = v1, C2 = v2 ) // constant declaration 
-continue // to the next loop iteration 
-default //
-defer // command execution 
-else // otherwise for if 
-<<<<<<< HEAD
-for // cycle 
-if // branch 
-import "..." // import a package
+const Big float64 = 1 << 100 // binary 1 with 100 zeros 
+continue // reserved keyword: to the next loop iteration 
+default // reserved keyword: 
+defer // reserved keyword: command execution 
+else // reserved keyword: otherwise for if 
+fallthrough // reserved keyword: to the next case in switch 
+for // reserved keyword: cycle 
+func f() { ... } // reserved keyword: function declaration
+func main() { ... } // programme starting function 
+go goroutime_name // reserved keyword: start concurrent routine 
+goto label // reserved keyword: 
+if // reserved keyword: branch 
+import "..." // reserved keyword: import a package
 import ( "..." ) // factored import statement 
 init () // functions to be automatically executed when package is imported 
-interface i {} //
-=======
->>>>>>> a4aadbdb8e4b9d43940e9a7fefda6c2500509a92
-fallthrough // to the next case in switch 
-for // cycle 
-func f() { ... } // function declaration
-func main() { ... } // programme starting function 
-go goroutime_name // start concurrent routine 
-goto label // 
-<<<<<<< HEAD
+interface i {} // reserved keyword: 
 make(T) // allocate memory for a value of type T 
-map[KeyType]ValueType // map declaration 
-=======
-if // branch 
-import "..." // import a package
-import ( "..." ) // factored import statement 
-interface i {} //
-map //
->>>>>>> a4aadbdb8e4b9d43940e9a7fefda6c2500509a92
-package main // package declaration 
-range // 
-return // 
-select // 
-struct S { ... } // structure declaration 
+map[KeyType]ValueType // reserved keyword: map declaration 
+package main // reserved keyword: package declaration 
+range // reserved keyword: 
+return // reserved keyword: 
+select // reserved keyword: 
+struct S { ... } //reserved keyword:  structure declaration 
 struct { ... } // struct literal 
-switch // 
-type Type // type declaration 
-var name Type = expression //  variables declaration 
+switch // reserved keyword: 
+type Type // reserved keyword: type declaration 
+var name Type = expression // reserved keyword:  variables declaration 
 
-ioutil.Discard // writing to this output stream discards the data 
-os.Stdout // standard output stream 
-
+ioutil.Discard // package: writing to this output stream discards the data 
+os.Stdout // package: standard output stream 
