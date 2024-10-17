@@ -1,4 +1,4 @@
-// Bon: https://www.youtube.com/watch?v=_cmqniwQz3c
+// Based on: https://www.youtube.com/watch?v=_cmqniwQz3c
 package main
 
 import (
