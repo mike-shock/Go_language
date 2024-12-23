@@ -1,5 +1,6 @@
 ;  // a semicolon may be omitted before a closing ")" or "}"
 _  // blank identifier ~ the variable to throw away value 
+_ // When a package is imported prefixed with a blank identifier, the init function of the package is called. The function registers the driver. 
 <- // operation of sending to a channel (ch<-) or reading from (<-ch) a channel 
 := // type inference: short assignment and declaration of a variable 
 %T // for printing the type 
