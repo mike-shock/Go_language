@@ -14,6 +14,7 @@ ch <- v // send a value to the channel
 []T // slice
 [size]T // array
 T(v) // expression for converting a value to the type 
+~T // interface{ ~[]int } has a core type ([]int)
 
 break    // reserved keyword: if, for, switch 
 case     // reserved keyword: switch 
