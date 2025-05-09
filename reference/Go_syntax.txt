@@ -1,6 +1,6 @@
 ;  // a semicolon may be omitted before a closing ")" or "}"
 _  // blank identifier ~ the variable to throw away value 
-_ // When a package is imported prefixed with a blank identifier, the init function of the package is called. The function registers the driver. 
+_  // when a package is imported prefixed with a blank identifier, the init function of the package is called. The function registers the driver
 <- // operation of sending to a channel (ch<-) or reading from (<-ch) a channel 
 := // type inference: short assignment and declaration of a variable 
 %T // for printing the type 
@@ -15,11 +15,12 @@ ch <- v // send a value to the channel
 [size]T // array
 T(v) // expression for converting a value to the type 
 ~T // interface{ ~[]int } has a core type ([]int)
+label: // label
 
-break    // reserved keyword: if, for, switch 
-case     // reserved keyword: switch 
-chan ch  // reserved keyword: channel declaration 
-ch<-     // input channel type 
+break   // reserved keyword: if, for, switch 
+case    // reserved keyword: switch 
+chan ch // reserved keyword: channel declaration 
+ch<-    // input channel type 
 const C = expression       // reserved keyword: constant declaration 
 const C1, C2 = v1, v2      // constant declaration 
 const ( C1 = v1, C2 = v2 ) // constant declaration 
@@ -45,11 +46,16 @@ package main // reserved keyword: package declaration
 range // reserved keyword: 
 return // reserved keyword: 
 select // reserved keyword: 
-struct S { ... } //reserved keyword:  structure declaration 
-struct { ... } // struct literal 
+struct S { ... } // reserved keyword: structure declaration 
+struct { ... } // struct literal?
+struct{} // a struct type with zero elements
+struct{}{} // a composite literal, it constructs a value of type struct{} with an empty element list
 switch // reserved keyword: 
-type Type // reserved keyword: type declaration 
-var name Type = expression // reserved keyword:  variables declaration 
+type T T0 // reserved keyword: declares a new type T that is never identical to the type T0 on the right-hand side of the declaration
+type A = T // declares only a new name A for the type on the right-hand side: here, A and T denote the same and thus identical type T
+type T = pkg1.T // alias
+type Alias[P1 C1, P2 C2] = someType // declare type parameters with the alias declaration
+var v Type = expression // reserved keyword: variables declaration 
 
 ioutil.Discard // package: writing to this output stream discards the data 
 os.Stdout // package: standard output stream 
