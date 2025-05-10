@@ -8,15 +8,16 @@ _  // when a package is imported prefixed with a blank identifier, the init func
 *p // referring by pointer to a value 
 *T // a pointer to the type T 
 &v // getting a pointer to a value 
-v := <- ch // receive a value from the channel
-v, closed := <- ch // receive a value from the channel and check if it's closed 
+v = <- ch // receive a value from the channel
+v, closed := <- ch // receive a value from the channel and check if it's closed: true | false 
 ch <- v // send a value to the channel 
-[]T // slice
-[size]T // array
-T(v) // expression for converting a value to the type 
-~T // interface{ ~[]int } has a core type ([]int)
+[]T // slice of T
+[size]T // array of T
+T(v) // expression for converting a value 'v' to the type T
+~T //  ~T means the set of all types whose underlying type is T
 label: // label
 
+any // empty type: type any = interface{}
 break   // reserved keyword: if, for, switch 
 case    // reserved keyword: switch 
 chan ch // reserved keyword: channel declaration 
@@ -39,7 +40,8 @@ if // reserved keyword: branch
 import "..." // reserved keyword: import a package
 import ( "..." ) // factored import statement 
 init () // functions to be automatically executed when package is imported 
-interface i {} // reserved keyword: 
+interface i // reserved keyword: 
+interface i { operation() } // reserved keyword: interface declaration with 1 operation
 make(T) // allocate memory for a value of type T 
 map[KeyType]ValueType // reserved keyword: map declaration 
 package main // reserved keyword: package declaration 
@@ -47,14 +49,15 @@ range // reserved keyword:
 return // reserved keyword: 
 select // reserved keyword: 
 struct S { ... } // reserved keyword: structure declaration 
-struct { ... } // struct literal?
+struct { ... } // struct literal
 struct{} // a struct type with zero elements
 struct{}{} // a composite literal, it constructs a value of type struct{} with an empty element list
 switch // reserved keyword: 
 type T T0 // reserved keyword: declares a new type T that is never identical to the type T0 on the right-hand side of the declaration
 type A = T // declares only a new name A for the type on the right-hand side: here, A and T denote the same and thus identical type T
-type T = pkg1.T // alias
+type T = pkg1.T // alias for a type from the package
 type Alias[P1 C1, P2 C2] = someType // declare type parameters with the alias declaration
+type C interface { T1|T2|~T3 } // constraint declaration
 var v Type = expression // reserved keyword: variables declaration 
 
 ioutil.Discard // package: writing to this output stream discards the data 
