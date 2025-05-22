@@ -1,0 +1,9 @@
+
+value, err := function() // error handling
+if err != nil {
+	reportError(errors.New("function returned error!"))
+} 
+process(value)
+
+value := data.(Type) // type assertion provides access to an interface value's underlying concrete value
+value, ok := data.(Type) // type assertion and value conversion
