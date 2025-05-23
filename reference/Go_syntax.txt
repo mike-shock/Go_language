@@ -5,12 +5,15 @@ _  // when a package is imported prefixed with a blank identifier, the init func
 := // type inference: short assignment and declaration of a variable 
 %T // for printing the type 
 %v // for printing the value 
+%#v //
 *p // referring by pointer to a value 
 *T // a pointer to the type T 
 &v // getting a pointer to a value 
+v // value in a variable
 v = <- ch // receive a value from the channel
 v, closed := <- ch // receive a value from the channel and check if it's closed: true | false 
 ch <- v // send a value to the channel 
+T // type
 []T // slice of T
 [size]T // array of T
 T(v) // expression for converting a value 'v' to the type T
@@ -33,8 +36,9 @@ else // reserved keyword: otherwise for if
 fallthrough // reserved keyword: to the next case in switch 
 for // reserved keyword: cycle 
 func f() { ... } // reserved keyword: function declaration
+func init() { ... } // initializer functions in a package
 func main() { ... } // programme starting function 
-go goroutime_name // reserved keyword: start concurrent routine 
+go goroutime_name() // reserved keyword: start concurrent routine 
 goto label // reserved keyword: 
 if // reserved keyword: branch 
 import "..." // reserved keyword: import a package
@@ -50,6 +54,7 @@ return // reserved keyword:
 select // reserved keyword: 
 struct S { ... } // reserved keyword: structure declaration 
 struct { ... } // struct literal
+struct { f T; ... }{ f:v; ... } // struct literal with initial values
 struct{} // a struct type with zero elements
 struct{}{} // a composite literal, it constructs a value of type struct{} with an empty element list
 switch // reserved keyword: 
@@ -59,6 +64,7 @@ type T = pkg1.T // alias for a type from the package
 type Alias[P1 C1, P2 C2] = someType // declare type parameters with the alias declaration
 type C interface { T1|T2|~T3 } // constraint declaration
 var v Type = expression // reserved keyword: variables declaration 
+variableOfTypeT2 := T2(variableOfTypeT1)
 
 ioutil.Discard // package: writing to this output stream discards the data 
 os.Stdout // package: standard output stream 
