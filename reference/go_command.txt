@@ -1,8 +1,9 @@
 
-go build program.go   # compile the program 
-go doc "package.name" # print info about package 
-go fmt program.go     # (reformat) package sources 
-go run program.go     # run the program 
+go build program.go		# compile the program 
+go doc "package.name"		# print info about package 
+go fmt program.go		# (reformat) package sources 
+go run program.go		# run the program 
+go test . -v --count=1 1>1 2>2	# test with verbose output and without caching 
 
 go tool dist list 
 

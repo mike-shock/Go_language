@@ -1,4 +1,4 @@
-
+any = interface{}
 blank identifier = _ 
 Capitalized exported names ~ of variables and functions 
 CSP = communicating sequential processes 
@@ -17,6 +17,9 @@ gollvm ~ Go LLVM
 GopherJS ~ cross-compiler from Go to JavaScript 
 gopl ~ "The Go Programming Language" book by A.A.A.Donovan & B.W.Kernighan (gopl.io) 
 goroutine ~ concurrently executable function 
+interface type ~
+interface type descriptor ~
+interface value ~ a concrete type and a value of that type: interface’s dynamic type and dynamic value
 Ken Thompson ~ 
 keywords ~ Go has 25 keywords 
 line comments ~ start with the character sequence // and stop at the end of the line
@@ -37,7 +40,9 @@ tagless switch ~
 tokens ~ 4 classes: identifiers, keywords, operators and punctuation, literals
 tuple assignment ~ i, j = j, i 
 TinyGo.org ~
+type assertion ~
 type constraint ~ an interface that defines the set of permissible type arguments for the respective type parameter and controls the operations supported by values of that type parameter
+type satisfies an interface = type possesses all the methods the interface requires
 underlying type ~ If T is 1 of the predeclared boolean, numeric, or string types, or a type literal, the corresponding underlying type is T itself
 zero value ~ of an uninitialized variable is implicit initial value: 0 for numbers, false for booleans, "" for strings, nil for interfaces and reference types 
 
