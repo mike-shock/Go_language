@@ -1,0 +1,6 @@
+
+ioutil.Discard // package: writing to this output stream discards the data 
+
+os.Stderr // package: standard error stream 
+os.Stdin  // package: standard input stream 
+os.Stdout // package: standard output stream 

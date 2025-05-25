@@ -65,6 +65,3 @@ type Alias[P1 C1, P2 C2] = someType // declare type parameters with the alias de
 type C interface { T1|T2|~T3 } // constraint declaration
 var v Type = expression // reserved keyword: variables declaration 
 variableOfTypeT2 := T2(variableOfTypeT1)
-
-ioutil.Discard // package: writing to this output stream discards the data 
-os.Stdout // package: standard output stream 
