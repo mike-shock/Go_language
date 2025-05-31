@@ -4,7 +4,7 @@
 Go
 
 // tools.go
-//go:build tools
+// go:build tools
 
 package tools
 
@@ -29,3 +29,7 @@ tool github.com/golang/mock/mockgen v1.6.0
 • tool не устанавливает инструмент — он лишь фиксирует его как зависимость.
 • Команда go mod tidy не удаляет такие записи.
 • Отлично подходит для корпоративных и командных проектов, где важна единая версия
+
+
+// https://go.googlesource.com/tools/+/refs/heads/master/gopls/README.md
+gopls 
