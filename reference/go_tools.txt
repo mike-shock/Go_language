@@ -30,6 +30,8 @@ tool github.com/golang/mock/mockgen v1.6.0
 • Команда go mod tidy не удаляет такие записи.
 • Отлично подходит для корпоративных и командных проектов, где важна единая версия
 
-
 // https://go.googlesource.com/tools/+/refs/heads/master/gopls/README.md
 gopls 
+
+
+Утилита goimports делает то же самое, что и gofmt, но ещё автоматически оптимизирует и сортирует импорты.
