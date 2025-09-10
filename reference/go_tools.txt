@@ -1,37 +1,34 @@
 Как использовать новую директиву tool
-
 До Go 1.24, чтобы «закрепить» зависимости на CLI-инструменты, разработчики использовали такой хак:
-Go
-
-// tools.go
-// go:build tools
-
-package tools
-
-import (
-    _ "github.com/golang/mock/mockgen"
-)
+    // tools.go
+    // go:build tools
+    package tools
+    import (
+        _ "github.com/golang/mock/mockgen"
+    )
 
 Теперь всё намного проще
-
 1. Добавьте инструмент в go.mod:
-shell
-
-go get tool github.com/golang/mock/mockgen@v1.6.0
-
+    go get tool github.com/golang/mock/mockgen@v1.6.0
 2. Это создаст запись:
-tool github.com/golang/mock/mockgen v1.6.0
-
+    tool github.com/golang/mock/mockgen v1.6.0
 Инструмент не будет включён в go build — он «за кадром», только как зависимость для разработки.
-
 Важно:
-
 • tool не устанавливает инструмент — он лишь фиксирует его как зависимость.
 • Команда go mod tidy не удаляет такие записи.
 • Отлично подходит для корпоративных и командных проектов, где важна единая версия
 
+/////////////////////////////////////////////////////////////////////////////////
 // https://go.googlesource.com/tools/+/refs/heads/master/gopls/README.md
 gopls 
 
-
+/////////////////////////////////////////////////////////////////////////////////
 Утилита goimports делает то же самое, что и gofmt, но ещё автоматически оптимизирует и сортирует импорты.
+/////////////////////////////////////////////////////////////////////////////////
+go install golang.org/x/tools/...@latest
+go: downloading golang.org/x/tools v0.36.0
+go: downloading golang.org/x/telemetry v0.0.0-20250807160809-1a19826ec488
+go: downloading golang.org/x/mod v0.27.0
+go: downloading golang.org/x/net v0.43.0
+go: downloading golang.org/x/sync v0.16.0
+go: downloading github.com/yuin/goldmark v1.4.13
