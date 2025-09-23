@@ -1,7 +1,7 @@
 
 Keywords: // may be used only where the syntax permits; they can’t be used as names
- break      default    func      interface       select 
- case		defer        	go      map		struct
+ break		default		func	interface	select 
+ case		defer		go	map		struct
  chan		else		goto	package		switch
  const		fallthrough	if	range		type
  continue	for		import	return		var
