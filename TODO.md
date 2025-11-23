@@ -1,5 +1,6 @@
 # Go language
 
+* Add source code samples.
 * Mimimize the Review to the Preview.
 * Finish the Review presentation. 
 * Make a presentation on Go's tech-dev innovations (technological View).
