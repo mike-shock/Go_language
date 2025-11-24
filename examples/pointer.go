@@ -5,8 +5,8 @@ import "fmt"
 type BaseType = string
 
 func main() {
-	var v BaseType = "Значение"  // переменная типа BaseType
-	var p *BaseType // указатель на переменную типа BaseType
+	var v BaseType = "Значение" // переменная типа BaseType
+	var p *BaseType             // указатель на переменную типа BaseType
 
 	p = &v  // ссылка на значение переменной типа BaseType
 	c := *p // значение переменной типа BaseType по ссылке на v
