@@ -20,7 +20,7 @@ type Album struct {
 	media        string
 }
 
-var a = Album{"Pink Floyd", "Dark Side of the Moon", 1973, 44, "катушка 18 см"}
+var a = Album{"Dark Side of the Moon", "Pink Floyd", 1973, 44, "катушка 18 см"}
 
 type TapeRecorder struct {
 	Model string
