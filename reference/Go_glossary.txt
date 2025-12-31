@@ -1,12 +1,15 @@
 any = interface{}
 blank identifier = _ 
+built-in constants ~ false, true, iota, nil
 Capitalized exported names ~ of variables and functions 
 CSP = communicating sequential processes 
 channel ~ communication mechanism that allows one goroutine to pass values of a specified type to another goroutine 
 composite literal ~ a compact notation for instantiating any of Go’s composite types from a sequence of element values: []color.Color{...} or gif.GIF{...}
 contributed packages ~ godoc.org/ 
 core type ~ an abstract construct that was introduced for expediency and to simplify dealing with generic operands
+deferred function ~
 factored import statement ~ ( "..." ) 
+GC = garbage collector
 gc ~ Google compiler toolchain 
 gccgo ~ 
 general comments ~ start with the character sequence /* and stop with the first subsequent character sequence */
@@ -36,6 +39,7 @@ standard packages ~ golang.org/pkg
 statement ~ every statement begins with a keyword 
 struct ~ a group of values called fields, often of different types, that are collected together in a single object that can be treated as a unit
 struct literal ~ 
+struct type ~
 tagless switch ~ 
 tokens ~ 4 classes: identifiers, keywords, operators and punctuation, literals
 tuple assignment ~ i, j = j, i 
@@ -44,5 +48,7 @@ type assertion ~
 type constraint ~ an interface that defines the set of permissible type arguments for the respective type parameter and controls the operations supported by values of that type parameter
 type satisfies an interface = type possesses all the methods the interface requires
 underlying type ~ If T is 1 of the predeclared boolean, numeric, or string types, or a type literal, the corresponding underlying type is T itself
+untyped constants ~
+WASM = web assembly
 zero value ~ of an uninitialized variable is implicit initial value: 0 for numbers, false for booleans, "" for strings, nil for interfaces and reference types 
 

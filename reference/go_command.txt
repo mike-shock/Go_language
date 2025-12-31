@@ -2,8 +2,12 @@
 go build program.go		# compile the program 
 go doc "package.name"		# print info about package 
 go fmt program.go		# (reformat) package sources 
-go run program.go		# run the program 
+go run .                        # build & run the main program in the current module
+go run program.go		# build & run the program 
+
+go test .
 go test . -v --count=1 1>1 2>2	# test with verbose output and without caching 
+go test program.go
 
 go tool dist list 
 

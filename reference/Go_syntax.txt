@@ -33,11 +33,13 @@ continue // reserved keyword: to the next loop iteration
 default // reserved keyword: 
 defer // reserved keyword: command execution 
 else // reserved keyword: otherwise for if 
+f() // function call
 fallthrough // reserved keyword: to the next case in switch 
 for // reserved keyword: cycle 
 func f() { ... } // reserved keyword: function declaration
 func init() { ... } // initializer functions in a package
 func main() { ... } // programme starting function 
+func (receiver T)m() {} // method declaration
 go goroutime_name() // reserved keyword: start concurrent routine 
 goto label // reserved keyword: 
 if // reserved keyword: branch 
@@ -46,6 +48,7 @@ import ( "..." ) // factored import statement
 init () // functions to be automatically executed when package is imported 
 interface i // reserved keyword: 
 interface i { operation() } // reserved keyword: interface declaration with 1 operation
+r.m() // method call
 make(T) // allocate memory for a value of type T 
 map[KeyType]ValueType // reserved keyword: map declaration 
 package main // reserved keyword: package declaration 
