@@ -4,7 +4,7 @@ built-in constants ~ false, true, iota, nil
 Capitalized exported names ~ of variables and functions 
 CSP = communicating sequential processes 
 channel ~ communication mechanism that allows one goroutine to pass values of a specified type to another goroutine 
-composite literal ~ a compact notation for instantiating any of Go’s composite types from a sequence of element values: []color.Color{...} or gif.GIF{...}
+composite literal ~ a compact notation for instantiating any of Go's composite types from a sequence of element values: []color.Color{...} or gif.GIF{...}
 contributed packages ~ godoc.org/ 
 core type ~ an abstract construct that was introduced for expediency and to simplify dealing with generic operands
 deferred function ~
