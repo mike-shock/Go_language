@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-type BaseType = string
+type BaseType string
 
 func main() {
 	var v BaseType = "Значение" // переменная типа BaseType
