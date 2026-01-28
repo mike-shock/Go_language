@@ -1,17 +1,16 @@
 # Go language
-The Go programming language intro (in Russian).
+The Go programming language introductory information (in Russian).
 
 My presentation and learming materials for the Go language.
 WARNING: These materials are not finished, my work is in progress.
 
-Go_Review.odp	- an initial presentation of the Go language
-Go_Review.pdf   - a PDF version
+preview/	- a preliminary presentation of the Go language; FINISHED so far
+view/           - a short technological view of the Go programming system;
 
-intro/          - my 1st unfinished attempt to talk about Go; may be expanded into a tutorial
-reference/	- some simple text notes, kinda cheatsheets
-review/         - a shortened intro; unfinished
-samples/	- code samples from presentation will be placed here
+review/         - an initial presentation of the Go language (a shortened intro); unfinished;
+intro/          - an unfinished attempt to thoroughly talk about Go; should be expanded into a tutorial
 tutorial/	- a detailed tutorial that may be done in the future...
-view/           - a short technological view at the Go language
+samples/	- code samples from presentation will be placed here
+reference/	- some simple text notes, kinda cheatsheets
 
 (c) Mike Shock, 2024-2025.
