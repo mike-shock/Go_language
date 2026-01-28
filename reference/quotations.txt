@@ -4,6 +4,9 @@ https://www.youtube.com/watch?v=PAAkCSZUG1c # Go Proverbs by Rob Pike
 «Our original goal was not to create a new programming language, it was to create a better way to write programs.»
 ~ Rob Pike
 
+«Readable means reliable.»
+~ Rob Pike
+
 «Remember that moment when you first understood Go interfaces? That "aha!" when you realized 
 they're not just abstract programming concepts, but the key to writing maintainable production code.»
 ~ Abhishek Kumar￼<https://www.linkedin.com/pulse/go-interfaces-production-engineers-secret-weapon-abhishek-kumar-gnebf>
