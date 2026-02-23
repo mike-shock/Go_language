@@ -13,4 +13,4 @@ tutorial/	- a detailed tutorial that may be done in the future...
 samples/	- code samples from presentation will be placed here
 reference/	- some simple text notes, kinda cheatsheets
 
-(c) Mike Shock, 2024-2025.
+(c) Mike Shock, 2024-2026.
