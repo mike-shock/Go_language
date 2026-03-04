@@ -13,6 +13,7 @@ GC = garbage collector
 gc ~ Google compiler toolchain 
 gccgo ~ 
 general comments ~ start with the character sequence /* and stop with the first subsequent character sequence */
+generics ~ обобщения 
 generic operands ~ operands whose types are type parameters
 Go ~ programming language 
 Golang = Go language 
@@ -26,6 +27,7 @@ interface value ~ a concrete type and a value of that type: interface�s dynamic 
 Ken Thompson ~ 
 keywords ~ Go has 25 keywords 
 line comments ~ start with the character sequence // and stop at the end of the line
+map ~  
 naked return ~ return without an expression: named return value is returned
 name ~ begins with anything that Unicode deems a letter or _ and may have any number of letters, digits, and underscores: case matters 
 omitted inferred types ~ of variables with initializers
